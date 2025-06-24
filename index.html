@@ -15,18 +15,21 @@
 
 <body class="bg-blue-100 text-gray-800">
 
-  <nav class="bg-white shadow fixed w-full z-10">
-    <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
-      <h1 class="text-xl font-bold text-blue-700">Khairul Amirin</h1>
-      <ul class="flex space-x-6 text-sm font-medium text-blue-600">
-        <li><a href="#about" class="hover:underline" title="Go to about section">About</a></li>
-        <li><a href="#education" class="hover:underline" title="Go to education section">Education</a></li>
-        <li><a href="#skills" class="hover:underline" title="Go to skills section">Skills</a></li>
-        <li><a href="#projects" class="hover:underline" title="Go to projects section">Projects</a></li>
-        <li><a href="#contact" class="hover:underline" title="Go to contact section">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
+ <nav class="bg-white shadow fixed w-full z-20 top-0 left-0">
+  <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+    <h1 class="text-xl font-bold text-blue-700">Khairul Amirin</h1>
+    <button class="md:hidden" onclick="document.getElementById('menu').classList.toggle('hidden')">
+      <i class="fas fa-bars text-xl text-blue-700"></i>
+    </button>
+    <ul id="menu" class="hidden md:flex space-x-6 text-sm font-medium text-blue-600">
+      <li><a href="#about" class="hover:underline">About</a></li>
+      <li><a href="#education" class="hover:underline">Education</a></li>
+      <li><a href="#skills" class="hover:underline">Skills</a></li>
+      <li><a href="#projects" class="hover:underline">Projects</a></li>
+      <li><a href="#contact" class="hover:underline">Contact</a></li>
+    </ul>
+  </div>
+</nav>
 
   <div class="max-w-4xl mx-auto pt-24 px-4">
 
